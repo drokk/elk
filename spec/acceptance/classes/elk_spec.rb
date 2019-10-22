@@ -5,9 +5,9 @@ describe 'elk class' do
   let(:manifest) {
     "class {'elk':}"
   }
-  it 'should run without errors' do
-    result = apply_manifest(manifest, :catch_failures => true)
-    expect(result.exit_code).to eq 2
+    it 'should run without errors' do
+        result = apply_manifest(manifest, :catch_failures => true)
+        expect(result.exit_code).to eq 2
+    end
   end
- end
 end
