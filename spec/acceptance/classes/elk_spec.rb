@@ -10,3 +10,4 @@ describe 'elk class' do
     result = apply_manifest(manifest, :catch_failures => true)
     expect(result.exit_code).to eq 2
 end
+end
